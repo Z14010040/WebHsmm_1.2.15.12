@@ -1,0 +1,47 @@
+*{ margin:0;padding:0;border:0; }
+body { font-size:12px; background:#FFF;}
+a { text-decoration:none;}
+.content { margin-left:10%;width:80%;height:80%; color: #505050; background:#ffffff;position: absolute;}
+#main { border-top:#007dc9 4px solid; background:#ffffff;}
+/*#header {width:100%;height:10%;background-image: url(images/logo.gif);background-repeat: no-repeat;background-position:left;
+margin:0px auto;color:black;font-size:25px;
+}*/
+.leftmenu { margin:0;padding:0;margin:0;width:20%;float:left; background:#EEE; border-top:#EEE 10px solid;overflow: auto;}
+.center { padding-left: 1%;margin:0px; width: 79%;float:left;padding-bottom:10px; border-top:#EEE 10px solid; background:#ffffff;}
+.center h4{ margin:10px; font-size:12px; padding:6px 0px; text-indent:10px; background:#eee;}
+.center h4 a{ text-decoration:none;  border: 1px solid #ddd; color:#9E9E9E; color:red;}
+.center h4 a:hover{ text-decoration:underline;}
+#header {width:100%;background-repeat: no-repeat;background-position:left;
+         margin:0px auto;color:black;font-size:25px;line-height:80px;text-align: right;
+         font-weight:bold;border-bottom:#52c3f1 3px solid;}
+#header1 {width:100%;background-repeat: no-repeat;background-position:left;
+         margin:0px auto;color:black;font-size:25px;line-height:80px;text-align: right;
+         font-weight:bold;border-bottom:#52c3f1 3px solid;}
+#nav { line-height: 24px;  list-style-type: none; background:#CCCCCC; width:100%;}
+#nav a {display: block;  text-align:left;text-decoration:none; color:#666}
+#nab a:link {color:#666; text-decoration:none;}
+#nav a:visited  {color:#666;text-decoration:none;}
+#nav a:hover  {color:#FFF;text-decoration:none;font-weight:bold;}
+#nav li {float:left; width: 100%; background:#EEEEEE;font-size: 14px;font-weight: bold;} /*一级菜单*/
+#nav li.tree { background:#EEEEEE;}
+#nav li.tree a {background:  url("../images/tree.png") left no-repeat;}
+#nav li.untree a {background: url("../images/untree.png") left no-repeat;}
+#nav li.untree {background:#CCCCCC;}
+#nav li a {padding-left: 15px;}
+#nav li a:hover{background-color:#bbbbbb;}/*一级菜单hover*/
+#nav li ul {line-height: 27px;  list-style-type: none;text-align:left; display: none; /*left: -999em;*/ width:100%; /*position: absolute;*/ overflow:hidden;}
+#nav li ul li{float:left; width:100%; background:#50C0F0;font-size:12px;font-weight:normal;}/*二级菜单*/
+#nav li ul a{display: block;width:100%;text-align:left;padding-left:40px;}
+#nav li.tree ul a,#nav li.untree ul a {background:none;}
+#nav li.tree ul ,#nav li.untree ul {background:#CCCCCC;}
+#nav li ul a:link  {color:#666; text-decoration:none;}
+#nav li ul a:visited  {color:#666;text-decoration:none;}
+#nav li ul a:hover  {color:#F3F3F3;text-decoration:none;font-weight:normal;background:#0080C5;}/*二级菜单*/
+#nav li:hover ul {left: auto;}/*take effective*/
+#nav li.sfhover ul {left: auto; position:static;display: block;}
+/* FOOTER */
+#footer {clear: both; color: #0080C5; text-align: center; font-size: 12px; line-height:2; width:100%; padding: 0px; height: 20px;line-height: 20px;}
+#footer a { color: #0080C5; background: #FFF;  text-decoration:none; }
+#footer a:hover { background: #FFF; text-decoration: underline; color: #444;}
+div#row {display:inline}
+div#row1 { display:inline; font-size:20px}

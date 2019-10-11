@@ -1,0 +1,3 @@
+1，密钥状态列表不能实时的中英文切换
+2，中英文配置文件，需要上传至密码机/mnt/linux/tomcat8/webapps/目录下，供java程序读取
+3，log_manage.js，line 46，英文的Audited

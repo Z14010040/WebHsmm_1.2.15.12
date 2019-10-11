@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         id="WebApp_ID" version="2.5">
+    <!--<servlet>-->
+        <!--<servlet-name>AuditLog</servlet-name>-->
+        <!--<servlet-class>com.sansec.hsm.servlet.log.AuditLog</servlet-class>-->
+        <!--<load-on-startup>0</load-on-startup>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>AuditLog</servlet-name>-->
+        <!--<url-pattern>/user/autoLogin</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+        <servlet>
+           <servlet-name>InitServlet</servlet-name>
+           <servlet-class>com.sansec.hsm.servlet.InitServlet</servlet-class>
+           <load-on-startup>0</load-on-startup>
+        </servlet>
+        <servlet-mapping>
+           <servlet-name>InitServlet</servlet-name>
+           <url-pattern>/init</url-pattern>
+        </servlet-mapping>
+  <filter>
+        <filter-name>httpHeaderSecurity</filter-name>
+        <filter-class>org.apache.catalina.filters.HttpHeaderSecurityFilter</filter-class>
+        <!--<async-supported>true</async-supported>-->
+     <!--<init-param>
+            <param-name>hstsPreload</param-name>
+            <param-value>true</param-value>
+        </init-param> -->
+        <init-param>
+            <param-name>hstsIncludeSubDomains</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>hstsMaxAgeSeconds</param-name>
+            <param-value>31536000</param-value>
+        </init-param>
+         <init-param>
+            <param-name>antiClickJackingOption</param-name>
+            <param-value>SAMEORIGIN</param-value>
+        </init-param>       
+    </filter>  
+    <filter-mapping>
+        <filter-name>httpHeaderSecurity</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

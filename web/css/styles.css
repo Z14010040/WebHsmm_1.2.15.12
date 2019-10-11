@@ -1,0 +1,55 @@
+#title {text-align: center; color: #ff0000; margin-top: 18px; margin-bottom: 18px}
+#caution {text-align: center; color: #ff0000}
+#information {text-align: center; color: #0000ff}
+* {border: 0px; padding: 0px; margin: 0px}
+BODY {text-align: center; background: #fff; font-size: 14px}
+.totalInfo {text-align: center;}
+.guideInfo {padding-bottom: 10px; width: 100%; height: 30px; padding-top: 10px}
+.Info {border: #cccccc 1px solid; margin: 8px auto; width: 90%; border-collapse: collapse; height: auto}
+.toheader {text-align: left; width: 100%; background: #cccccc; height: 24px; font-weight: bolder;clear:both;line-height: 24px;}
+.tobody {text-align: left; /*width: 90%; margin-top: 20px;*/ margin-bottom: 20px}
+.tobody INPUT {border: 1px solid}
+.tobody table {border: #cccccc 1px solid; width: 100%; border-collapse: collapse;border-spacing: 0;}
+.tobody TR {font-size: 14px; height: 20px}
+.tobody td,.tobody th {border: #cccccc 1px solid; border-collapse: collapse;padding: 2px;}
+.tobody tr.notRead {font-weight: bold;}
+.tobody tr.msgArea td,.tobody tr.pageArea td{border-right: 0px;}
+.button {TEXT-ALIGN: center; DISPLAY: block; HEIGHT: 30px}
+.tobottom {TEXT-ALIGN: right; WIDTH: 100%; HEIGHT: 24px; border-top: #cccccc 1px solid}
+.inheader {border-top: #cccccc 1px solid; border-left: #cccccc 1px solid; border-right: #cccccc 1px solid; text-align: left; width: 100%; background: #eeeeee; height: 20px;line-height: 20px;}
+.inbody {TEXT-ALIGN: center; WIDTH: 100%}
+.blank {width: 100%; height: 10px}
+.guideInfo UL {LIST-STYLE-TYPE: none}
+.guideInfo LI {LINE-HEIGHT: 30px; FLOAT: left; MARGIN-LEFT: 3px}
+.guideInfo A {TEXT-ALIGN: center; DISPLAY: block; HEIGHT: 30px}
+.guideInfo A:link {COLOR: #000000; TEXT-DECORATION: none}
+.guideInfo A:visited {COLOR: #000000; TEXT-DECORATION: none}
+.guideInfo A:hover {COLOR: #000000; FONT-SIZE: 14px; TEXT-DECORATION: none}
+.tobottom UL {LIST-STYLE-TYPE: none}
+.tobottom LI {LINE-HEIGHT: 24px; FLOAT: right; MARGIN-RIGHT: 3px}
+.tobottom A {TEXT-ALIGN: center; DISPLAY: block; HEIGHT: 24px}
+.tobottom A:link {COLOR: #000000; TEXT-DECORATION: none}
+.tobottom A:visited {COLOR: #000000; TEXT-DECORATION: none}
+.tobottom A:hover {COLOR: #000000; FONT-SIZE: 14px; TEXT-DECORATION: none}
+#hide {DISPLAY: none}
+#hide2 {DISPLAY: block}
+#loginPageInfo {PADDING-BOTTOM: 0px; MARGIN: 0px auto; PADDING-LEFT: 0px; WIDTH: 600px; PADDING-RIGHT: 0px; BACKGROUND: #ffffff; HEIGHT: 600px; COLOR: #505050; PADDING-TOP: 0px}
+#loginLogU {BACKGROUND-IMAGE: url(../images/bg_login.gif); POSITION: relative; MARGIN: 20px auto; WIDTH: 100%; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: center; FLOAT: left; HEIGHT: 232px; COLOR: black; FONT-SIZE: 14px; OVERFLOW: hidden}
+.loginTxt {LIST-STYLE-TYPE: none; PADDING-LEFT: 300px; WIDTH: 380px; FLOAT: left; PADDING-TOP: 30px}
+.loginInput {LIST-STYLE-TYPE: none; PADDING-LEFT: 180px; WIDTH: 180px; PADDING-TOP: 30px}
+.loginmm {BORDER-BOTTOM: #50c0f0 1px solid; BORDER-LEFT: #50c0f0 1px solid; WIDTH: 100%; BORDER-TOP: #50c0f0 1px solid; BORDER-RIGHT: #50c0f0 1px solid}
+LI {MARGIN-BOTTOM: 14px}
+.loginSub INPUT {BORDER-BOTTOM: #0000ff 0px solid; BORDER-LEFT: #0000ff 0px solid; WIDTH: 50px; BACKGROUND: #50c0f0; HEIGHT: 24px; COLOR: #ffffff; MARGIN-LEFT: 300px; BORDER-TOP: #0000ff 0px solid; BORDER-RIGHT: #0000ff 0px solid}
+#loginArea {POSITION: absolute; WIDTH: 280px; TOP: 20px; LEFT: 300px}
+#loginArea TABLE TD {TEXT-ALIGN: center; PADDING-TOP: 10px}
+#loginArea TABLE #tabletitle {COLOR: #50c0f0; FONT-SIZE: 12px}
+#loginArea TABLE .left {FONT-SIZE: 14px}
+#loginArea TABLE .right INPUT {BORDER-BOTTOM: #0000ff 1px solid; BORDER-LEFT: #0000ff 1px solid; WIDTH: 150px; HEIGHT: 24px; COLOR: #000000; BORDER-TOP: #0000ff 1px solid; BORDER-RIGHT: #0000ff 1px solid}
+#loginArea TABLE .warning {COLOR: red; FONT-SIZE: 12px}
+#loginArea .oneline .button {border-bottom: #0000ff 0px solid; border-left: #0000ff 0px solid; width: 50px; background: #50c0f0; height: 24px; color: #ffffff; font-size: 12px; border-top: #0000ff 0px solid; border-right: #0000ff 0px solid}
+.pageArea input.selected {background-color: #50c0f0;}
+.pageArea span{color: #50c0f0;background-color:#FFFFFF;display:-moz-inline-box;display:inline-block;text-align: center;font-weight: bold;cursor: pointer;margin-top:4px;padding-left:2px;padding-right:2px;border:1px solid #6b9B9B}
+.pageArea a {text-decoration: none;}
+.pageArea span.pageNow {color: #FFFFFF;background-color:#6b9B9B;}
+#loadding {margin-bottom: -10px;margin-left: auto;margin-right: auto;background: url("../images/loadding.gif") center no-repeat;height: 20px;width: 20px;display: none;}
+div#row {display:inline}

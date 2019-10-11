@@ -1,0 +1,1 @@
+gcc -shared -fPIC -o so/libMyCDll.so MyCDll.c -lcrypt
