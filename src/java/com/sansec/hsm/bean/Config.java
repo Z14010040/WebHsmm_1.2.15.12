@@ -174,6 +174,7 @@ public class Config {
 		int rv = kmapi.INSTANCE.KM_LoadKeys();
 		// load key
 		LogUtil.println("Conifig.java->initialize(): load keys ...");
+		System.out.println("Conifig.java->initialize(): load keys ...");
 		if (rv != HSMError.SDR_OK) {
 			LogUtil.println("Conifig.java->initialize(): load keys error!");
 		}

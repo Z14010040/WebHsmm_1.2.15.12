@@ -51,13 +51,13 @@
 
             url = "/mainFrame.jsp";
 
-//            加载共享内存
-            int rv = kmapi.INSTANCE.KM_LoadKeys();
-            // load key
-            LogUtil.println("Conifig.java->initialize(): load keys ...");
-            if (rv != HSMError.SDR_OK) {
-                LogUtil.println("Conifig.java->initialize(): load keys error!");
-            }
+////            加载共享内存
+//            int rv = kmapi.INSTANCE.KM_LoadKeys();
+//            // load key
+//            LogUtil.println("Conifig.java->initialize(): load keys ...");
+//            if (rv != HSMError.SDR_OK) {
+//                LogUtil.println("Conifig.java->initialize(): load keys error!");
+//            }
 
             return true;
         } else {

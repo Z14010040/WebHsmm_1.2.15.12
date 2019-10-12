@@ -61,7 +61,7 @@
                             <label id="label_AutoLoginInputTips"></label>:&nbsp;<input type="password" id="pin" name="pin" autocomplete="off"/>
                             <%if("The pin code is not correct or the operator key is not inserted into the machine !".equals(result)){%>
                             <label id="title" >The pin code is not correct or the operator key is not inserted into the machine !</label>
-                            <%}else{%>
+                            <%}else if("Key type error ! Please ensure the key type is operator !".equals(result)){%>
                             <label id="title" >Key type error ! Please ensure the key type is operator !</label>
                             <%}%>
                             <br>

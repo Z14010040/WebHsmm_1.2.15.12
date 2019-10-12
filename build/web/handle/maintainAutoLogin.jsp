@@ -60,13 +60,13 @@
                 url = "/error.jsp?url=/user/autoLogin.jsp&error="+result;
                 return false;
             }
-            if(!opt.isLogin()){
-                System.out.println("!opt.isLogin()");
-                req.setAttribute("result", "No operator login.");
-                LogUtil.println("NoPrivilegeException: "+"No operator login.");
-                url = "/handle/maintainUser.jsp?action=showUserLogin&isGuide=false";
-                return false;
-            }
+//            if(!opt.isLogin()){
+//                System.out.println("!opt.isLogin()");
+//                req.setAttribute("result", "No operator login.");
+//                LogUtil.println("NoPrivilegeException: "+"No operator login.");
+//                url = "/handle/maintainUser.jsp?action=showUserLogin&isGuide=false";
+//                return false;
+//            }
             String pin = req.getParameter("pin");
             Manager mgr = new Manager(pin);
             mgr.login();
@@ -76,7 +76,7 @@
                 mgr.modifyIniFile(0, "enable", req.getParameter("enable"));
                 LogUtil.println("Set auto login sucess!");
                 url = "/user/autoLoginFinish.jsp?enable="+req.getParameter("enable");
-            } else{
+            } else if(no>0){
                 url = "/user/autoLogin.jsp?result="+"Key type error ! Please ensure the key type is operator !";
                 return false;
             }

@@ -122,8 +122,6 @@ public class Manager extends HSMUser {
                 }
                 OperationLogUtil.genLogMsg("INFO","SetSecKey" ,"success",null,null,null);
             }
-                
-               
 	} 
 	
 	/**

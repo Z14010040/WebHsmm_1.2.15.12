@@ -12,7 +12,7 @@ import org.apache.log4j.Logger;
 public class LogUtil {
     public static boolean debug = true; //开发调试
 
- //   private static final String name = "/mnt/linux/log/webhsm.log";
+//    private static final String name = "/mnt/linux/log/webhsm.log";
 
     private static final Logger logger = Logger.getLogger("web");
 //    private static final HashMap<String,Level> LEVEL_MAP = 
